@@ -18,7 +18,7 @@ boton.addEventListener("click", () => {
 
   reg = registrada.value;
   dist = distancia.value;
-  tarifa.innerText = precio;
+
 
   if(reg === "si"){
     if(dist <= 3){
@@ -30,7 +30,7 @@ boton.addEventListener("click", () => {
     else if(dist <= 12){
       precio = 855.97
     }
-    else if(dist > 12){
+    else if(dist <= 27){
       precio = 917.24
     }
   };
@@ -48,6 +48,7 @@ boton.addEventListener("click", () => {
       precio = 1458.41
     }
   };
+  tarifa.innerText = precio;
 });
 
 
